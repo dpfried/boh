@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>similar artists</title>
+      <script type="text/javascript" src="d3.v2.js"></script>
+      <script type="text/javascript" src="jquery-1.8.0.js"></script>
+  </head>
+  <style>
+      p {
+          font-family: Helvetica;
+      }
+      table {
+          font-family: Helvetica;
+      }
+      text {
+          font-family: Helvetica;
+      }
+  </style>
+  <body>
+      <p>Find new bands! To find similar artists, enter a name or click on an artist's circle once the graph is displayed. You can drag circles around to get a better view.</p> <p>Most similar artists are closest to the center. Circle size is popularity (total number of listeners); circle darkness is faithfulness (average # of plays per listener). Data from last.fm</p>
+      <table>
+          <tr>
+              <th>artist</th>
+              <th># to display</th>
+          </tr>
+          <tr>
+              <td>
+                  <input id=artist>
+                  </input>
+              </td>
+              <td>
+                  <input id=limit>
+                  </input>
+              </td>
+          </tr>
+      </table>
+      <div id=controls>
+          <button id=back>back</button>
+          <button id=graph>graph!</button>
+      </div>
+      <div id=status>
+          <p id=statusArtist></p>
+          <p id=statusSimilars></p>
+      </div>
+   <svg id=chart></svg>
+   <script type="text/javascript" src="similar.js"></script>
+  </body>
+</html>
