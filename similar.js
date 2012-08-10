@@ -137,7 +137,6 @@ function bind() {
         var ang = Math.PI * i / n;
         d.x = Math.cos(ang) * maxRadius + width / 2;
         d.y = Math.sin(ang) * maxRadius + height / 2;
-        console.log(d.x);
     });
 
     var linkEnter = link.data(links)
